@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_manutencao_qtd_produtos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="br.com.atan.atancontagem.Inventarios.ManutencaoQtdProdutosFragment"
+    tools:showIn="@layout/activity_contagem_manut_qtd">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="0dp"
+        android:background="@drawable/bordas_arredondadas_titulos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="250dp">
+
+        <TextView
+            android:text="Nº:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/t_fragment_ped_manut_qtd_produtos_NUMERO_PEDIDO"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+
+    <TextView
+        android:text="NOME DO PRODUTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/t_fragment_ped_manut_qtd_produtos_NOME_PRODUTO"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="REF. DO PRODUTO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/t_fragment_ped_manut_qtd_produtos_REF_PRODUTO"
+        android:textAlignment="center"
+        android:textStyle="normal|bold|italic"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="CONTAGEM ATUAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_fragment_ped_manut_qtd_produtos_VLR_CONT_ATUAL"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/bordas_retangular_body_02"
+        android:layout_marginTop="20dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_fragment_ped_manut_qtd_produtos_MENOS"
+            android:layout_width="80dp"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/btn_circulo_width"
+            android:text="-"
+            android:textSize="30sp"
+            android:visibility="visible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bordas_retangular_body"
+            android:orientation="vertical">
+
+            <SearchView
+                android:id="@+id/t_fragment_ped_manut_qtd_produtos_QTD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/bordas_retangular_body_03"
+                android:fitsSystemWindows="false"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:iconifiedByDefault="false"
+                android:inputType="number"
+                android:maxLength="6"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="36sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Quantidade" />
+        </LinearLayout>
+
+
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_fragment_ped_manut_qtd_produtos_MAIS"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/btn_circulo_left"
+            android:text="+"
+            android:textSize="30sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:text="TOTAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal|bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_fragment_ped_manut_qtd_produtos_CONTAGEM_TOTAL_"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:layout_gravity="center">
+
+        <Button
+            android:text="Confirmar"
+            android:layout_height="80dp"
+            android:id="@+id/btn_fragment_ped_manut_qtd_produtos_CONFIRMAR"
+            android:layout_weight="0.03"
+            android:layout_width="235dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

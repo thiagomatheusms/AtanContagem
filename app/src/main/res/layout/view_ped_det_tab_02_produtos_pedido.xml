@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view_pedidos_p5_produtos_pedido">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/grid"
+        android:columnCount="1"
+        android:layout_row="2">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/header"
+            android:layout_row="0"
+            android:background="@drawable/bordas_arredondadas_header"
+            android:gravity="top"
+            android:layout_height="40dp">
+
+            <TextView
+                android:text="CÓDIGO:"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_marginStart="10dp"
+                android:textStyle="normal|bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COD"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/t_view_ped_det_tab_02_COD_PRODUTO"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_gravity="center" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:layout_height="match_parent"
+
+                android:gravity="right"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bordas_arredondadas_titulos_v2"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp">
+
+                <TextView
+                    android:text="0,00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/t_view_ped_det_tab_02_QTD"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/body"
+            android:layout_row="1"
+            android:gravity="fill"
+            android:background="@drawable/bordas_arredondadas"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="PRODUTO"
+                    android:textStyle="bold"
+                    android:id="@+id/t_view_ped_det_tab_02_NOME_PRODUTO"
+                    android:textSize="14sp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="REFERÊNCIA:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="normal|italic"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="REFERENCIA"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:id="@+id/t_view_ped_det_tab_02_REFERENCIA"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/bordas_retangular_body"
+                android:layout_height="40dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="PESO UN (KG):"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_marginTop="5dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0,0000"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14sp"
+                        android:textStyle="italic"
+                        android:id="@+id/t_view_ped_det_tab_02_PESO"
+                        android:fontFamily="sans-serif-condensed"
+
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:text="CUBAGEM UN (M³):"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        android:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0,0000"
+                        android:textSize="14sp"
+                        android:textStyle="italic"
+                        android:id="@+id/t_view_ped_det_tab_02_CUBAGEM"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="PREÇO UN (R$):"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:text="0,00"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:id="@+id/t_view_ped_det_tab_02_VLR_UN"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="PREÇO PROPOSTO UN (R$):"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="300dp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:text="0,00"
+                    android:textSize="14sp"
+                    android:textStyle="italic"
+                    android:id="@+id/t_view_ped_det_tab_02_VLR_PROPOSTO_UN"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:text="DIFERÊNCA (%):"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="300dp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="2"
+                    android:text="0,00"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/t_view_ped_det_tab_02_DIF_PERCENTUAL"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAlignment="textEnd"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/bordas_arredondadas_foolter_v2"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_height="30dp">
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="TOTAL (R$):"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:text="0,00"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic"
+                    android:id="@+id/t_view_ped_det_tab_02_TOTAL_PRODUTO"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="110dp"
+                    android:textAlignment="textEnd"
+                    android:layout_width="100dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </GridLayout>
+
+</LinearLayout>

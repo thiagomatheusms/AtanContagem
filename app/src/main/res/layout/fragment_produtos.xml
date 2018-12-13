@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.atan.atancontagem.Inventarios.ProdutosActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Sem dados para exibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/t_status_sem_dados_pedidos_pendentes"
+        android:layout_gravity="top|center"
+        android:textStyle="normal|bold"
+        android:visibility="invisible"
+        android:textSize="14sp"
+        android:layout_marginTop="20dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ListViewProdutos"
+            android:dividerHeight="20dp"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+</FrameLayout>

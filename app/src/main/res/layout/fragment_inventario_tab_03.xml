@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.atan.atancontagem.Fragment.InventarioTab03Fragment"
+    android:id="@+id/idLinear">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="br.com.atan.atancontagem.Fragment.InventarioTab02Fragment"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:id="@+id/img_sem_dados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="100dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/icon_atencao_erro" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ListViewProdutosContadosTab03"
+            android:dividerHeight="20dp"
+            android:divider="@android:color/transparent"
+            android:scrollbars="none"
+            android:layout_marginBottom="10dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

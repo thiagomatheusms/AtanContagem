@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_validacao_ok"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.atan.atancontagem.Registros.ValidacaoOKActivity"
+    android:background="@drawable/fundo_app_10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ok"
+        android:id="@+id/imageView15" />
+    <TextView
+        android:text="Validação realisada com sucesso. "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView20"
+        android:layout_marginStart="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic"
+        android:fontFamily="sans-serif-condensed" />
+
+    <Button
+        android:text="CONTINUAR"
+        android:layout_width="match_parent"
+        android:id="@+id/btn_continuarApp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif-condensed" />
+</LinearLayout>

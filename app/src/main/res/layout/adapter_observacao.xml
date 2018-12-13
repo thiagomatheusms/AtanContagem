@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordas_arredondadas">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/header"
+            android:layout_row="0"
+            android:background="@drawable/bordas_arredondadas_header"
+            android:gravity="top"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="INVENTÁRIO:"
+                android:textSize="15sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/obs_numInv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0">
+
+            <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Observação:"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="normal|bold|italic" />
+
+            <TextView
+            android:id="@+id/obs_Obs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="left"
+            android:text="Ainda não há observações sobre esse inventário."
+            android:textSize="12sp"
+            android:layout_margin="10dp"
+            android:textStyle="normal|bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Data:"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/obs_Data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=""
+                android:layout_marginLeft="150dp"
+                android:textSize="12sp"
+                android:textStyle="normal|bold" />
+
+            <TextView
+                android:id="@+id/obs_Hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text=""
+                android:textSize="12sp"
+                android:textStyle="normal|bold" />
+
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,74 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.atan.atancontagem.Fragment.InventarioTab02Fragment"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:padding="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bordas_arredondadas_foolter">
+
+        <android.support.v7.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:id="@+id/t_pesquisaProduto"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            app:queryHint="Buscar" />
+
+    </FrameLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="br.com.atan.atancontagem.Fragment.InventarioTab02Fragment"
+        android:orientation="vertical"
+        android:baselineAligned="false">
+
+        <ImageView
+            android:id="@+id/img_sem_dados"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="100dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/icon_atencao_erro" />
+
+        <ListView
+            android:id="@+id/ListViewProdutosTab02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="90dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dp"
+            android:scrollbars="none" />
+
+        <Switch
+            android:text="Pesquisar por código?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/btn_tipo_pesquisa"
+            android:checked="true" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

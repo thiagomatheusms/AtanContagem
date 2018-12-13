@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.atan.atancontagem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icone_round"
+        android:label="ATAN Contagem"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Paginas.Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inventarios.InventarioActivity"
+            android:label="@string/title_activity_pedidos"
+            android:parentActivityName=".Inventarios.ProdutosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.atan.atancontagem.Inventarios.ProdutosActivity" />
+        </activity>
+        <activity
+            android:name=".Inventarios.ManutencaoQtdProdutosActivity"
+            android:label="@string/title_activity_manutencao_qtd_produtos"
+            android:parentActivityName=".Inventarios.ProdutosActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.atan.atancontagem.Inventarios.ProdutosActivity" />
+        </activity>
+        <activity
+            android:name=".Paginas.SobreActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inventarios.ProdutosActivity"
+            android:label="Produtos"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.atan.atancontagem.MainActivity" />
+        </activity>
+        <activity android:name=".Registros.RegistraAppActivity" />
+        <activity android:name=".Registros.ValidacaoOKActivity" />
+        <activity android:name=".Registros.ValidacaoErroActivity" />
+        <activity
+            android:name=".Inventarios.ListaInventario"
+            android:label="@string/title_activity_lista_inventario"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.atan.atancontagem.MainActivity" />
+        </activity>
+        <activity android:name=".ObservacaoActivity"></activity>
+    </application>
+
+</manifest>

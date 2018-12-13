@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.com.atan.atancontagem.Inventarios.ListaInventario">
+    <item
+        android:id="@+id/action_baixar_inventario"
+        android:orderInCategory="100"
+        android:title="Baixar inventarios"
+        android:icon="@drawable/download"
+        app:showAsAction="ifRoom" />
+
+</menu>

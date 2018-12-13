@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+
+    <!--<item-->
+        <!--android:id="@+id/action_abrir_inventario"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Abrir Inventário"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/action_enviar_inventario"
+        android:orderInCategory="100"
+        android:title="Enviar Contagem"
+
+        app:showAsAction="ifRoom" />
+
+    <!--<item-->
+        <!--android:id="@+id/action_observacoes"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Visualizar Observações"-->
+
+        <!--app:showAsAction="ifRoom" />-->
+
+</menu>
