@@ -45,7 +45,7 @@
 
     <string name="title_activity_manutencao_qtd_produtos">Manutenção de Quantidades</string>
 
-    <string name="title_activity_status_proposta">Status de proposta</string>
+    <string name="title_activity_status_proposta">Status de proposta   </string>
     <string name="title_activity_propostas">Inventários</string>
     <string name="title_activity_lista_inventario">Lista de Inventários</string>
 </resources>
